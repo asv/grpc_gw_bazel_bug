@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+import "google/api/annotations.proto";
+
+service Foo {
+  rpc Bar(BarRequest) returns(BarResponse) {
+    option (google.api.http) = {
+      get: "/foo/bar"
+    };
+  }
+}
+
+message BarRequest {}
+message BarResponse {}

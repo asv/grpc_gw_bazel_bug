@@ -1,0 +1,7 @@
+load("@bazel_gazelle//:def.bzl", "gazelle")
+
+# gazelle:prefix github.com/grpc_gw_bazel_bug
+# gazelle:go_grpc_compilers @com_github_grpc_ecosystem_grpc_gateway_v2//protoc-gen-grpc-gateway:go_gen_grpc_gateway
+gazelle(
+    name = "gazelle",
+)
